@@ -16,7 +16,6 @@
   border-radius: 2px;
   outline: 0;
   border: 0;
-  padding: 13px 33px;
   color: white;
   text-transform: uppercase;
   font-family: Nunito Sans;
@@ -28,7 +27,8 @@
   height: 37px;
   width: 161px;
   cursor: pointer;
-}
+  margin-left: 45px;
+ }
 .logo {
   color: #e3b873;
   font-family: Nunito Sans;
@@ -45,7 +45,7 @@
 .header-content,
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-transform: uppercase;
   height: 83px;
   font-style: normal;
@@ -53,12 +53,18 @@
   font-size: 11px;
   line-height: 15px;
   align-items: center;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 92px;
+  padding-right: 92px;
+  }
+.container-navigation {
+  margin-left: 95px;
+  margin-right: 45px;
 }
 .header-navigation {
   list-style: none;
   display: flex;
+  text-transform: uppercase;
+  margin: 0px;
 }
 .header-navigation :hover {
   color: #e3b873;
@@ -71,9 +77,9 @@
   color: white;
 }
 .phone_link {
+  display: flex;
   font-size: 11px;
   line-height: 15px;
-  text-align: right;
   text-decoration-line: underline;
   color: #e3b873;
 }
@@ -95,7 +101,7 @@
   position: relative;
   z-index: 1;
   height: 707px;
-  padding-left: 135px;
+  margin-left: 134px;
 }
 .title {
   margin: 0;
@@ -153,21 +159,20 @@
   background-size: cover;
   height: 1074px;
 }
-.projects-container {
-  margin: 0;
-  padding-left: 125px;
-  padding-top: 107px;
-  padding-bottom: 52px;
-}
 .projects_navigation {
   display: flex;
   list-style: none;
-  width: 623px;
-  height: 24px;
-  margin-left: 492px;
   align-items: center;
-  padding-left: 0;
-  justify-content: space-between;
+  justify-content:flex-end;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+.projects_navigation_item {
+  padding-top: 107px;
+  padding-right: 60px;
+  padding-bottom: 55px;
+  margin-top: 0;
+  margin-left: 50px;
 }
 .projects_navigation_item a {
   font-family: Yeseva One;
@@ -176,6 +181,7 @@
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.3);
 }
 .projects_navigation :hover {
@@ -186,19 +192,15 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-items: flex-start;
-  align-content: flex-start;
-  justify-content: space-between;
   background: black;
+  margin-left: 134px;
 }
 .container_projects_completed {
   display: flex;
-  flex-wrap: wrap;
   height: 553px;
 }
 .projects_completed_text {
   margin: 0;
-  padding-left: 134px;
 }
 .projects_title {
   font-family: Yeseva One;
@@ -209,7 +211,8 @@
   letter-spacing: -0.07em;
   text-transform: uppercase;
   color: #e3b873;
-  margin-top: 30px;
+  width: 253px;
+  height: 66px;
   margin-bottom: 34px;
 }
 .projects_text {
@@ -219,7 +222,8 @@
   font-size: 14px;
   line-height: 27px;
   color: #ffffff;
-  max-width: 443px;
+  width: 442px;
+  height: 86px;
   margin-right: 50px;
   margin-bottom: 34px;
 }
@@ -235,6 +239,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 442px;
+  height: 390px;
   padding-bottom: 50px;
 }
 .projects_info_one,
@@ -260,6 +265,9 @@
   padding-top: 9px;
   color: #ffffff;
 }
+.projects_info_cost {
+  padding-top: 20px;
+}
 .vector {
   display: flex;
   width: 206px;
@@ -267,7 +275,7 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin-top: auto;
+  margin-top: -150px;
 }
 .dot {
   width: 10px;
@@ -280,15 +288,17 @@
   background: #ffffff;
 }
 .vector_photo {
-  margin-top: 15px;
-}
+  display: flex;
+  margin: 0 auto;
+  padding-right: 70px;
+  }
 .control {
   /*height: 1031px;*/
   /*width: 1256px;*/
   margin: -329px auto 0;
   background-color: none;
-  justify-content: flex-start ;
   align-items: center;
+  flex-direction: column;
 }
 .container__control_title {
   font-family: Yeseva One;
@@ -298,12 +308,14 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 32px;
+  margin-left: 50px;
 }
 .control_photo {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-left: 50px;
 }
 .container_video {
   width: 817px;
@@ -311,6 +323,7 @@
   margin: 30px auto 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
 }
 .video_polygon {
@@ -325,6 +338,7 @@
   width: 80px;
   height: 85px;
   position: absolute;
+  justify-content: center;
   margin: 174px auto 0 auto;
   transform: translate (50%, 50%);
   z-index: 1;
@@ -425,14 +439,13 @@
 }
 .repair {
   background-color: none;
-  padding-bottom:px;
   margin: 0 auto;
 }
 .container_repair {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 147px;
 }
 .container__repair_title {
   font-family: Yeseva One;
@@ -447,20 +460,20 @@
 }
 .repair_photo {
   text-align: center;
+  margin-bottom: 31px;
 }
 .repair_types {
-  width: 1236px;
   display: flex;
+  width: 1236px;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 35px;
-  margin-left: 103px;
+  margin: 0 auto;
 }
 .repair_block {
   width: 392px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content:flex-start;
   align-items: center;
   margin: 0 15px;
 }
@@ -518,13 +531,18 @@
   position: relative;
 }
 .measurer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: white;
   margin: 0 auto;
 }
 .measurer_block {
+  width: 1236px;
   display: flex;
   height: 725px;
-  margin-top: 80px;
+  margin: 0 auto;
+  padding-top: 125px;
 }
 .measurer_block_foto {
   display: flex;
@@ -725,7 +743,7 @@ color: #E3B873;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 1107px;
+  height: 1127px;
   }
 .container__clients_title {
   font-family: Yeseva One;
@@ -739,6 +757,7 @@ color: #E3B873;
 }
 .clients_photo {
   text-align: center;
+  margin-top: 14px;
 }
 .container_clients_text {
   display: flex;
@@ -800,7 +819,11 @@ color: #E3B873;
 .client_days_one {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-around;
+  width: 293px;
+  height: 54px;
+  margin: 27px 5px 0;
 }
 .questions {
   background-image: url(../images/tower.png);
@@ -845,12 +868,14 @@ color: #E3B873;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 35px;
 }
 .questions_block_forma_item {
   display: flex;
   width: 520px;
   height: 50px;
   justify-content: space-between;
+  margin-top: 45px;
 }
 .questions_forma_label {
   font-family: Nunito Sans;
@@ -872,12 +897,10 @@ color: #E3B873;
 }
 .questions_forma_item {
   width: 231px;
-  height: 45px;
   border-bottom: rgba(255, 255, 255, 0.15) 1px solid;
 }
 .questions_forma_info {
   width: 517px;
-  height: 45px;
   margin: 20px auto;
   border-bottom: rgba(255, 255, 255, 0.15) 1px solid;
 }
@@ -958,16 +981,15 @@ color: #E3B873;
   z-index: 1;
 }
 .map_address {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   margin-top: 50px;
-  margin-left: 255px;
-  position: relative;
-  z-index: 1;
 }
 .map_info {
-  margin: 0 auto;
-  background-position: center center;
-  background-size: cover;
+  margin-left: px;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 1;
 }
