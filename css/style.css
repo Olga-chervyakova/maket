@@ -86,7 +86,10 @@
 .hero {
   background-image: url("../images/hero.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
+  margin: 0 auto;
 }
 .hero-overlay {
   content: " ";
@@ -101,7 +104,7 @@
   position: relative;
   z-index: 1;
   height: 707px;
-  margin-left: 134px;
+  margin: 0 auto;
 }
 .title {
   margin: 0;
@@ -131,7 +134,8 @@
   margin-bottom: 41px;
 }
 .one-button {
-  display: flex;
+  display: block;
+  
 }
 .one-button_hero {
   background: none;
@@ -149,6 +153,7 @@
   height: 51px;
   width: 207px;
   cursor: pointer;
+  text-align: center;
 }
 .one-button :hover {
   background-color: #e3b873;
@@ -158,21 +163,20 @@
   background-color: black;
   background-size: cover;
   height: 1074px;
+ 
 }
 .projects_navigation {
   display: flex;
   list-style: none;
-  align-items: center;
-  justify-content:flex-end;
-  text-transform: uppercase;
-  margin-top: 0px;
+  justify-content: flex-end;
 }
 .projects_navigation_item {
+  display: flex;
   padding-top: 107px;
   padding-right: 60px;
   padding-bottom: 55px;
   margin-top: 0;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 .projects_navigation_item a {
   font-family: Yeseva One;
@@ -189,18 +193,19 @@
   text-decoration: underline;
 }
 .projects_completed {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   background: black;
-  margin-left: 134px;
+  background-size: cover;
+  
 }
 .container_projects_completed {
   display: flex;
-  height: 553px;
+  justify-content: center;
 }
 .projects_completed_text {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  margin-right: 80px;
 }
 .projects_title {
   font-family: Yeseva One;
@@ -289,9 +294,8 @@
 }
 .vector_photo {
   display: flex;
-  margin: 0 auto;
-  padding-right: 70px;
-  }
+  margin-left: 20px;
+}
 .control {
   /*height: 1031px;*/
   /*width: 1256px;*/
@@ -361,7 +365,7 @@
   text-align: center;
   color: #363636;
   max-width: 681px;
-  margin: 30px auto 0 auto;
+  margin: 30px auto 0 auto;;
 }
 .container_control_form {
   display: flex;
@@ -527,7 +531,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  padding: 0 17px 17px 0;
+  padding: 17px 17px;
   position: relative;
 }
 .measurer {
