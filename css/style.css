@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 .container {
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
 }
 .button {
@@ -135,7 +135,6 @@
 }
 .one-button {
   display: block;
-  
 }
 .one-button_hero {
   background: none;
@@ -163,7 +162,7 @@
   background-color: black;
   background-size: cover;
   height: 1074px;
- 
+  margin: 0 auto;
 }
 .projects_navigation {
   display: flex;
@@ -195,7 +194,7 @@
 .projects_completed {
   background: black;
   background-size: cover;
-  
+  margin: 0 auto;
 }
 .container_projects_completed {
   display: flex;
@@ -656,18 +655,17 @@
 .fantasies {
   position: relative;
   background-image: url(../images/fantasies.png);
+  margin: 0 auto;
 }
 .container_fantasies {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   height: 864px;
   margin-top: 200px;
 }
 .container_fantasies_block {
   position: relative;
   z-index: 1;
-  width: 411px;
   margin-top: 137px;
   margin-left: 99px;
 }
@@ -715,6 +713,7 @@ color: #E3B873;
   z-index: 1;
   margin-top: -41px;
   margin-bottom: -41px;
+  margin-left: 170px;
   width: 354px;
   height: 946px;
 }
@@ -727,6 +726,7 @@ color: #E3B873;
   margin-top: -113px;
   margin-bottom: 40px;
   margin-right: 102px;
+  margin-left: 43px;
 }
 .fantasies-overlay {
   content: " ";
