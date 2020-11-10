@@ -45,7 +45,7 @@
 .header-content,
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   text-transform: uppercase;
   height: 83px;
   font-style: normal;
@@ -53,8 +53,7 @@
   font-size: 11px;
   line-height: 15px;
   align-items: center;
-  padding-left: 92px;
-  padding-right: 92px;
+  margin: 0 auto;
   }
 .container-navigation {
   margin-left: 95px;
@@ -89,7 +88,6 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  margin: 0 auto;
 }
 .hero-overlay {
   content: " ";
