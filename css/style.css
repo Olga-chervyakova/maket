@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  font-family: Nunito Sans;
 }
 .body {
   font-family: Nunito Sans;
@@ -471,7 +470,6 @@
   margin: 0 auto;
 }
 .repair_block {
-  width: 392px;
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
