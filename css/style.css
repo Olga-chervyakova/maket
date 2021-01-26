@@ -1,10 +1,12 @@
-.body {
+* {
   margin: 0;
+}
+.body {
   font-family: Nunito Sans;
   box-sizing: border-box;
 }
 .container {
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
 }
 .button {
@@ -13,7 +15,6 @@
   border-radius: 2px;
   outline: 0;
   border: 0;
-  padding: 13px 33px;
   color: white;
   text-transform: uppercase;
   font-family: Nunito Sans;
@@ -25,7 +26,8 @@
   height: 37px;
   width: 161px;
   cursor: pointer;
-}
+  margin-left: 45px;
+ }
 .logo {
   color: #e3b873;
   font-family: Nunito Sans;
@@ -42,13 +44,25 @@
 .header-content,
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  text-transform: uppercase;
   height: 83px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
   align-items: center;
+  margin: 0 auto;
+  }
+.container-navigation {
+  margin-left: 95px;
+  margin-right: 45px;
 }
 .header-navigation {
   list-style: none;
   display: flex;
+  text-transform: uppercase;
+  margin: 0px;
 }
 .header-navigation :hover {
   color: #e3b873;
@@ -61,17 +75,17 @@
   color: white;
 }
 .phone_link {
+  display: flex;
   font-size: 11px;
   line-height: 15px;
-  text-align: right;
   text-decoration-line: underline;
   color: #e3b873;
 }
 .hero {
   background-image: url("../images/hero.jpg");
   background-size: cover;
-  height: 808px;
-  padding-top: 194px;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
 }
 .hero-overlay {
@@ -86,6 +100,8 @@
 .hero-container {
   position: relative;
   z-index: 1;
+  height: 707px;
+  margin: 0 auto;
 }
 .title {
   margin: 0;
@@ -94,6 +110,8 @@
   line-height: 53px;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 19px;
+  padding-top: 194px;
 }
 .span {
   color: #e3b873;
@@ -110,9 +128,10 @@
   font-size: 22px;
   line-height: 36px;
   color: #ffffff;
+  margin-bottom: 41px;
 }
 .one-button {
-  display: flex;
+  display: block;
 }
 .one-button_hero {
   background: none;
@@ -130,6 +149,7 @@
   height: 51px;
   width: 207px;
   cursor: pointer;
+  text-align: center;
 }
 .one-button :hover {
   background-color: #e3b873;
@@ -139,55 +159,49 @@
   background-color: black;
   background-size: cover;
   height: 1074px;
-}
-.projects-container {
-  margin: 0;
-  padding-top: 107px;
-  padding-left: 125px;
-  padding-bottom: 52px;
+  margin: 0 auto;
 }
 .projects_navigation {
   display: flex;
   list-style: none;
-  width: 623px;
-  height: 24px;
-  margin-left: 492px;
-  align-items: center;
-  padding-left: 0;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .projects_navigation_item {
+  display: flex;
+  padding-top: 107px;
+  padding-right: 60px;
+  padding-bottom: 55px;
+  margin-top: 0;
+  margin-left: 40px;
+}
+.projects_navigation_item a {
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.3);
 }
-.projects_navigation li a:hover {
+.projects_navigation :hover {
   color: #e3b873;
-  border-bottom: 1px solid  #E3B873;
-  cursor: pointer;
-}
-.active_link {
-  color: #E3B873;
-  border-bottom: 1px solid  #E3B873;
+  text-decoration: underline;
 }
 .projects_completed {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-items: flex-start;
-  align-content: flex-start;
-  justify-content: space-between;
   background: black;
-  width: 1172px;
-  height: 553px;
+  background-size: cover;
+  margin: 0 auto;
+}
+.container_projects_completed {
+  display: flex;
+  justify-content: center;
 }
 .projects_completed_text {
-  margin: 0;
-  padding-left: 134px;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  margin-right: 80px;
 }
 .projects_title {
   font-family: Yeseva One;
@@ -198,7 +212,8 @@
   letter-spacing: -0.07em;
   text-transform: uppercase;
   color: #e3b873;
-  margin-top: 70px;
+  width: 253px;
+  height: 66px;
   margin-bottom: 34px;
 }
 .projects_text {
@@ -208,13 +223,25 @@
   font-size: 14px;
   line-height: 27px;
   color: #ffffff;
-  max-width: 443px;
+  width: 442px;
+  height: 86px;
   margin-right: 50px;
   margin-bottom: 34px;
 }
+.project_photo_mobile {
+  display: none;
+}
+.icon_mobile {
+  display: none;
+}
 .projects_info {
   display: flex;
-  width: 390px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 442px;
+  height: 390px;
+  padding-bottom: 50px;
 }
 .projects_info_one,
 .projects_info_two {
@@ -226,7 +253,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  margin-bottom: 9px;
+  padding-top: 34px;
   text-transform: uppercase;
   color: #e3b873;
 }
@@ -236,7 +263,11 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 21px;
+  padding-top: 9px;
   color: #ffffff;
+}
+.projects_info_cost {
+  padding-top: 20px;
 }
 .vector {
   display: flex;
@@ -245,19 +276,7 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin-top: auto;
-}
-.slide_js {
-  width: 679px;
-  height: 482px;
-  margin-top: 53px;
-  background-image: url("./images/slider/rostov.png");
-}
-.left {
-  cursor: pointer;
-}
-.right {
-  cursor: pointer;
+  margin-top: -150px;
 }
 .dot {
   width: 10px;
@@ -265,18 +284,21 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
   margin-top: 2px;
-  cursor: pointer;
 }
-.active_dot {
-  background-color: white;
+.dot:hover {
+  background: #ffffff;
+}
+.vector_photo {
+  display: flex;
+  margin-left: 20px;
 }
 .control {
   /*height: 1031px;*/
   /*width: 1256px;*/
   margin: -329px auto 0;
   background-color: none;
-  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
 }
 .container__control_title {
   font-family: Yeseva One;
@@ -286,12 +308,14 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 32px;
+  margin-left: 50px;
 }
 .control_photo {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-left: 50px;
 }
 .container_video {
   width: 817px;
@@ -299,10 +323,11 @@
   margin: 30px auto 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
 }
 .video_polygon {
-  width: 817;
+  width: 817px;
   height: 434px;
   background-image: url(./images/video.png);
   display: flex;
@@ -313,6 +338,7 @@
   width: 80px;
   height: 85px;
   position: absolute;
+  justify-content: center;
   margin: 174px auto 0 auto;
   transform: translate (50%, 50%);
   z-index: 1;
@@ -324,6 +350,7 @@
   height: 1.5px;
   margin-top: 62.5px;
   border-style: none;
+  margin: 0 auto;
 }
 .online_control_text {
   font-family: Nunito Sans;
@@ -334,14 +361,15 @@
   text-align: center;
   color: #363636;
   max-width: 681px;
-  margin: 30px auto 0 auto;
+  margin: 30px auto 0 auto;;
 }
 .container_control_form {
   display: flex;
   justify-content: center;
   width: 769px;
   height: 51px;
-  margin: 91px 243px 0;
+  margin: 0 auto;
+  margin-top: 91px;
 }
 .form_item {
   width: 231px;
@@ -349,7 +377,6 @@
 }
 .form_label {
   font-family: Nunito Sans;
-  text-align: right;
   font-size: 13px;
   line-height: 21px;
   color: rgba(54, 54, 54, 0.5);
@@ -411,10 +438,14 @@
   opacity: 1;
 }
 .repair {
-  height: 850px;
-  width: 1256px;
   background-color: none;
   margin: 0 auto;
+}
+.container_repair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 147px;
 }
 .container__repair_title {
   font-family: Yeseva One;
@@ -425,15 +456,28 @@
   text-align: center;
   text-transform: uppercase;
   color: #181818;
+  margin-bottom: 13px;
 }
 .repair_photo {
   text-align: center;
+  margin-bottom: 31px;
 }
 .repair_types {
   display: flex;
+  width: 1236px;
+  flex-direction: row;
   justify-content: space-between;
+  margin: 0 auto;
+}
+.repair_block {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
   align-items: center;
-  margin-top: 35px;
+  margin: 0 15px;
+}
+.repair_block_foto_mobile {
+  display: none;
 }
 .repair_block_one {
   background-color: white;
@@ -464,8 +508,8 @@
 }
 .block_from_one {
   display: block;
-  margin: 17px 21px;
-  margin-top: -50px;
+  margin-right: 100px;
+  margin-top: -30px;
   width: 228px;
   height: 54px;
   position: relative;
@@ -482,17 +526,22 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  padding-top: 17px;
+  padding: 17px 17px;
   position: relative;
 }
 .measurer {
-  height: 725px;
-  width: 1643px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: white;
   margin: 0 auto;
 }
 .measurer_block {
+  width: 1236px;
   display: flex;
+  height: 725px;
+  margin: 0 auto;
+  padding-top: 125px;
 }
 .measurer_block_foto {
   display: flex;
@@ -599,20 +648,103 @@
   color: #e3b873;
   text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
-.clients {
-  display: flex;
-  height: 750px;
-  background-image: url(../images/frame.png);
+.fantasies {
   position: relative;
-  margin-top: 350px;
+  background-image: url(../images/fantasies.png);
+  margin: 0 auto;
 }
-.container_clients {
-  width: 1236px;
-  height: 642px;
+.container_fantasies {
+  display: flex;
+  justify-content: center;
+  height: 864px;
+  margin-top: 200px;
+}
+.container_fantasies_block {
+  position: relative;
+  z-index: 1;
+  margin-top: 137px;
+  margin-left: 99px;
+}
+.fantasies_foto_mobile {
+  display: none;
+}
+.container_fantasies_title {
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 27px;
+line-height: 37px;
+text-transform: uppercase;
+color: #E3B873;
+}
+.fantasies_block {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 47px;
+  width: 299px;
+  height: 516px;
+}
+.fantasies_block ul li{
+  list-style: none;
+}
+.fantasies_block ul {
+  padding: 0;
+}
+.fantasies_block_list__item a {
+  text-decoration: none;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+.fantasies_block_one {
   display: flex;
   flex-direction: column;
-  margin: -200px auto 0 auto;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  margin-top: -41px;
+  margin-bottom: -41px;
+  margin-left: 170px;
+  width: 354px;
+  height: 946px;
 }
+.fantasies_block_two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  margin-top: -113px;
+  margin-bottom: 40px;
+  margin-right: 102px;
+  margin-left: 43px;
+}
+.fantasies-overlay {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.clients {
+  background-image: url(../images/frame.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  margin-top: 110px;
+}
+.container_clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1127px;
+  }
 .container__clients_title {
   font-family: Yeseva One;
   font-style: normal;
@@ -625,6 +757,7 @@
 }
 .clients_photo {
   text-align: center;
+  margin-top: 14px;
 }
 .container_clients_text {
   display: flex;
@@ -638,16 +771,22 @@
   line-height: 29px;
   text-align: center;
   color: #363636;
+  margin-top: 25px;
 }
 .clients_info {
+  width: 1236px;
+  height: 642px;
+  margin-top: 39px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .clients_info_one {
   width: 376px;
   height: 428px;
-  display: inline-block;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background: #ffffff;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
@@ -679,10 +818,14 @@
 }
 .client_days_one {
   display: flex;
-  margin-top: 35px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 293px;
+  height: 54px;
+  margin: 27px 5px 0;
 }
 .questions {
-  height: 954px;
   background-image: url(../images/tower.png);
   background-size: cover;
   position: relative;
@@ -702,12 +845,13 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 954px;
 }
 .questions_block_forma {
   display: flex;
   width: 883px;
   height: 445px;
-  margin-top: -220px;
+  margin-top: -954px;
   background-color: black;
   flex-direction: column;
   justify-content: center;
@@ -724,12 +868,14 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 35px;
 }
 .questions_block_forma_item {
   display: flex;
   width: 520px;
   height: 50px;
   justify-content: space-between;
+  margin-top: 45px;
 }
 .questions_forma_label {
   font-family: Nunito Sans;
@@ -751,12 +897,10 @@
 }
 .questions_forma_item {
   width: 231px;
-  height: 45px;
   border-bottom: rgba(255, 255, 255, 0.15) 1px solid;
 }
 .questions_forma_info {
   width: 517px;
-  height: 45px;
   margin: 20px auto;
   border-bottom: rgba(255, 255, 255, 0.15) 1px solid;
 }
@@ -787,24 +931,21 @@
   box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
 }
 .address_information {
+  height: 954px;
   background-position: center;
   background-size: cover;
-  height: 954px;
   position: relative;
-  margin-top: -954px;
+  margin-top: -950px;
   z-index: 1;
 }
-.address_information:before {
+.information-overlay {
   content: "";
-  background: linear-gradient(
-          180deg,
-          rgba(24, 24, 24, 0.9) 3.47%,
-          rgba(24, 24, 24, 0.72) 100%
-  );
-  height: 100%;
-  width: 100%;
+  background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   position: absolute;
-  z-index: 1;
 }
 .address_info {
   display: flex;
@@ -830,6 +971,7 @@
   justify-content: center;
   text-align: center;
   flex-direction: row;
+  margin-top: 36px;
 }
 .icons_address {
   background-position: center;
@@ -839,15 +981,15 @@
   z-index: 1;
 }
 .map_address {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   margin-top: 50px;
-  margin-left: 255px;
-  position: relative;
-  z-index: 1;
 }
 .map_info {
-  background-position: center center;
-  background-size: cover;
+  margin-left: px;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 1;
 }
