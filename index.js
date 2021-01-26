@@ -25,6 +25,7 @@ const links = document.querySelectorAll(".projects_navigation_item");
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 
+
 // Объявление слайда
 const setImage = (index) => {
     city.innerHTML = images[index].city;
@@ -35,8 +36,8 @@ const setImage = (index) => {
         dots[i].classList.remove('active_dot');
         links[i].classList.remove('active_link');
     }
-    dots[index].classList.add('active-dot');
-    links[index].classList.add('active-link');
+    dots[index].classList.add('active_dot');
+    links[index].classList.add('active_link');
 };
 const currentSlide = (index) => {
     setImage(index);

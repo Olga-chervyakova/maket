@@ -170,11 +170,9 @@
   display: flex;
   padding-top: 107px;
   padding-right: 60px;
-  padding-bottom: 55px;
-  margin-top: 0;
-  margin-left: 40px;
+  padding-left: 45px;
 }
-.projects_navigation_item a {
+.projects_navigation_item {
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
@@ -187,6 +185,10 @@
 .projects_navigation :hover {
   color: #e3b873;
   text-decoration: underline;
+  cursor: pointer;
+}
+.active_link {
+  color: #e3b873;
 }
 .projects_completed {
   background: black;
@@ -284,13 +286,25 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
   margin-top: 2px;
+  cursor: pointer;
 }
 .dot:hover {
   background: #ffffff;
 }
-.vector_photo {
-  display: flex;
-  margin-left: 20px;
+.active_dot {
+background: white;
+}
+.left {
+  cursor: pointer;
+}
+.right {
+  cursor: pointer;
+}
+.slide_js {
+  width: 679px;
+  height: 482px;
+  margin-top: 53px;
+  background-image: url(../images/slider/rostov.png);
 }
 .control {
   /*height: 1031px;*/
